@@ -1,7 +1,17 @@
 $accent: #333333;
 $another: #fff;
+$bg: #f9f9f9;
 
 %title-font{
     font-family: 'Noto Serif', sans-serif;
     font-weight: 700;
+}
+
+
+
+@function max($numbers...) {
+    @return m#{a}x(#{numbers});
+}
+@function min($numbers...) {
+    @return m#{i}n(#{numbers});
 }

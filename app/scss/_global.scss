@@ -16,6 +16,7 @@ body{
 	color: $accent;
 	overflow-x: hidden;
 	min-width: 300px;
+	background-color: $bg;
 }
 
 .wrapper {
@@ -37,9 +38,11 @@ body{
   padding: 0 15px;
 }
 
-
-
-
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
 
 
 
