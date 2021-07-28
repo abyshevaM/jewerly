@@ -28,5 +28,9 @@ $(function () {
         });
     }
 
+    $('.information__btn').on('click', function(){
+        $('.information__text').toggleClass('information__text--active')
+        $('.information__btn').toggleClass('information__btn--active')
+    });
 
 })
