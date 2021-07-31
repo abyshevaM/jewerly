@@ -690,9 +690,10 @@ body.lock{
 }
 
 .map{
-    padding: 60px 40px;
+    padding: 60px 0 40px;
     iframe{
        text-align: center;
+       height: 750px;
     }
 }
 
