@@ -33,4 +33,10 @@ $(function () {
         $('.information__btn').toggleClass('information__btn--active')
     });
 
+    $('.header__burger').on('click', function(){
+        $('.header').toggleClass('header--active')
+        $('.header__burger').toggleClass('header__burger--active')
+        $('body').toggleClass('lock')
+    })
+
 })
