@@ -17,6 +17,15 @@
         margin-right: 20px;
         }
     }
+    .category{
+        &__items{
+            flex-wrap: wrap;
+        }
+        &__item{
+            width: calc(33.333% - 30px);
+            margin-bottom: 20px;
+        }
+    }
 }
 
 @media (max-width: 1100px){
@@ -151,7 +160,27 @@
             display: none;
         }
     }
-  
+    .catalog{
+        &__item{
+            padding: 20px;
+        }
+    }
+    .information{
+        &__title{
+            text-align: center;
+        }
+        &__inner{
+            display: block;
+            padding: 0;
+        }
+        &__description{
+            margin-right: 0;
+            max-width: 100%;
+        }
+        &__benefits{
+            margin-top: 50px;
+        }
+    }
 }
 @media (max-width: 840px){
     .mailing{
@@ -250,6 +279,41 @@
             margin: 0 10px 20px;
         }
     }
+    .category{
+        padding: 60px 0;
+    }
+    .catalog{
+        &__box{
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+        }
+        &__items{
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+        &__item{
+            width: calc(50% - 30px);
+            padding: 0;
+            margin: 0 15px 20px;
+            
+        }
+    }
+}
+@media (max-width: 620px){
+    .category{
+        &__items{
+            margin-bottom: 30px;
+        }
+        &__item{
+            width: calc(50% - 30px);
+        }
+        &__select{
+            font-size: 14px;
+        }
+    }
+    .information{
+        margin-bottom: 60px;
+    }
 }
 @media (max-width: 550px){
     .partners{
@@ -279,8 +343,31 @@
         }
         &__title{
             margin-bottom: 10px;
+        } 
+    }
+    .catalog{
+        &__items{
+            display: block;
         }
-        
+        &__item{
+            width: calc(100% - 30px);
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        &__item-link{
+            display: block;
+            margin-bottom: 10px;
+        }
+        &__item-img{
+            width: 100%;
+        }
+        &__item-category{
+            width: 100%;
+            max-width: 100%;
+        }
+        &__btn-link{
+            margin-top: 20px;
+        }
     }
 }
 
@@ -334,6 +421,11 @@
         }
         &__popup-imgbtn{
             width: 80%;
+        }
+    }
+    .category{
+        &__item{
+            width: calc(100% - 30px);
         }
     }
 }
