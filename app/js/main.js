@@ -15,6 +15,17 @@ $(function () {
             freeMode: true,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
+            breakpoints: {
+                1111: {
+                    spaceBetween: 30
+                },
+                951: {
+                    spaceBetween: 20
+                },
+                320: {
+                    spaceBetween: 5
+                }
+            }
         });
         var swiper2 = new Swiper(".product__slider-gallery", {
             spaceBetween: 10,
@@ -25,6 +36,7 @@ $(function () {
             thumbs: {
                 swiper: swiper,
             },
+            
         });
     }
 
@@ -36,7 +48,7 @@ $(function () {
     $('.header__burger').on('click', function(){
         $('.header').toggleClass('header--active')
         $('.header__burger').toggleClass('header__burger--active')
-        $('body').toggleClass('lock')
+        $('body').toggleClass(lock)
     })
 
 })

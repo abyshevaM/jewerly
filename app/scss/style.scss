@@ -5,7 +5,7 @@
 @import 'global';
 
 
-body.lock{
+body.lock {
     overflow: hidden;
 }
 
@@ -14,6 +14,7 @@ body.lock{
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+
     &__inner {
         padding: 0 15px;
         min-height: calc(100vh - 110px);
@@ -24,16 +25,20 @@ body.lock{
         color: $another;
     }
 }
-.header-main{
+
+.header-main {
     background-color: #333;
 }
+
 .header {
     padding: 27px 0 30px;
+
     &__inner {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     &__adaptive {
         position: absolute;
         width: 100%;
@@ -90,10 +95,12 @@ body.lock{
         font-size: 14px;
         line-height: 21px;
     }
-    &__list-linkentrance{
+
+    &__list-linkentrance {
         position: relative;
         padding-right: 6px;
-        &::after{
+
+        &::after {
             content: '/';
             position: absolute;
             bottom: 0;
@@ -164,14 +171,17 @@ body.lock{
     border-top: 1px solid #FFFFFF;
     padding-top: 30px;
     margin: 0 -15px;
+
     &__inner {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     &__item {
         padding: 0 15px;
         position: relative;
+
         &::before {
             content: '';
             position: absolute;
@@ -181,34 +191,39 @@ body.lock{
             left: 0;
             top: 0;
         }
+
         &:first-child::before {
             display: none;
         }
     }
 }
 
-.assortment{
+.assortment {
     padding: 100px 0 120px;
     text-align: center;
-    &__pretitle{
+
+    &__pretitle {
         font-size: 21px;
         line-height: 30px;
         margin-bottom: 15px;
-        
+
     }
-    &__title{
+
+    &__title {
         font-size: 30px;
         line-height: 41px;
         @extend %title-font;
         margin-bottom: 60px;
     }
-    &__buttons{
+
+    &__buttons {
         margin-bottom: 75px;
         padding-right: 6px;
         display: flex;
         justify-content: space-between;
     }
-    &__btn{
+
+    &__btn {
         border: 1px solid #D6D6D6;
         background-color: #fff;
         padding: 17px 25px;
@@ -218,7 +233,8 @@ body.lock{
         letter-spacing: 1.8px;
         text-transform: uppercase;
         position: relative;
-        &::before{
+
+        &::before {
             content: '';
             position: absolute;
             border: 1px solid #D6D6D6;
@@ -229,22 +245,27 @@ body.lock{
             right: -6px;
         }
     }
-    .mixitup-control-active{
+
+    .mixitup-control-active {
         background-color: $accent;
         color: $another;
         border: $accent;
     }
-    .mixitup-control-active.assortment__btn::before{
+
+    .mixitup-control-active.assortment__btn::before {
         display: none;
     }
-    &__items{
+
+    &__items {
         display: grid;
         grid-template-columns: repeat(3, 2fr);
         grid-gap: 30px;
     }
-    &__item{
+
+    &__item {
         position: relative;
-        &::after{
+
+        &::after {
             content: '';
             position: absolute;
             left: 0;
@@ -253,7 +274,8 @@ body.lock{
             height: 100%;
             background: linear-gradient(180deg, rgba(180, 180, 180, 0) 20.31%, #333333 100%);
         }
-        span{
+
+        span {
             position: absolute;
             text-transform: uppercase;
             color: $another;
@@ -267,11 +289,13 @@ body.lock{
             bottom: 58px;
         }
     }
-    &__img{
+
+    &__img {
         object-fit: cover;
     }
 }
-.advertising{
+
+.advertising {
     background-image: url(../images/advertising-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -279,23 +303,27 @@ body.lock{
     text-align: center;
     color: $another;
     padding: 100px 15px;
-    &__pretitle{
+
+    &__pretitle {
         font-size: 21px;
         line-height: 29px;
         margin-bottom: 15px;
     }
-    &__title{
+
+    &__title {
         @extend %title-font;
         font-size: 30px;
         line-height: 41px;
         margin-bottom: 45px;
     }
-    &__text{
+
+    &__text {
         line-height: 25px;
         max-width: 730px;
         margin: 0 auto 60px;
     }
-    &__btn{
+
+    &__btn {
         padding: 15px 35px;
         color: $accent;
         background-color: $another;
@@ -304,29 +332,34 @@ body.lock{
     }
 }
 
-.blog{
+.blog {
     padding: 120px 0;
     text-align: center;
-    &__pretitle{
+
+    &__pretitle {
         font-size: 21px;
         line-height: 29px;
         margin-bottom: 15px;
     }
-    &__title{
+
+    &__title {
         font-size: 30px;
         line-height: 41px;
         @extend %title-font;
         margin-bottom: 60px;
     }
-    &__items{
+
+    &__items {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 30px
     }
-    &__item{
+
+    &__item {
         z-index: 1;
         position: relative;
-        &::after{
+
+        &::after {
             content: '';
             position: absolute;
             left: 0;
@@ -335,7 +368,8 @@ body.lock{
             height: 100%;
             background: linear-gradient(180deg, rgba(180, 180, 180, 0) 20.31%, #333333 100%);
         }
-        span{
+
+        span {
             position: absolute;
             color: $another;
             font-size: 21px;
@@ -348,7 +382,8 @@ body.lock{
             margin: 0 auto;
         }
     }
-    &__btn{
+
+    &__btn {
         margin-top: 60px;
         text-transform: uppercase;
         letter-spacing: 1.8px;
@@ -358,54 +393,68 @@ body.lock{
     }
 }
 
-.gallery{
+.gallery {
     padding-bottom: 90px;
     text-align: center;
-    &__pretitle{
+
+    &__pretitle {
         font-size: 21px;
         line-height: 29px;
         margin-bottom: 15px;
     }
-    &__title{
+
+    &__title {
         @extend %title-font;
         font-size: 30px;
         line-height: 41px;
         margin-bottom: 60px;
     }
-    &__inner{
+
+    &__inner {
         display: grid;
-        grid-template-columns: repeat(4,2fr);
+        grid-template-columns: repeat(4, 2fr);
         grid-column-gap: 0;
     }
-    &__item{
-        &:first-child{
-            grid-column: span 2; 
+
+    &__item {
+        &:first-child {
+            grid-column: span 2;
         }
-        &:last-child{
+
+        &:last-child {
             grid-column: span 2;
         }
     }
-    &__item-img{
+
+    &__item-img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    &__popup-box{
+
+    &__popup-box {
         position: relative;
     }
-    &__item-popup{
+
+    &__popup-btn {
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
     }
-    &__item-popupimg{ 
+
+    &__item-popup{
         height: 100%;
         width: 100%;
     }
+    &__item-popupimg{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
-.mailing{
+.mailing {
     margin-top: 60px;
     background-image: url(../images/mailing-bg.jpg);
     background-repeat: no-repeat;
@@ -413,36 +462,43 @@ body.lock{
     background-size: cover;
     padding: 100px 15px 120px;
     color: $another;
-    &__inner{
+
+    &__inner {
         display: flex;
         justify-content: center;
-       
+
     }
-    &__pretitle{
+
+    &__pretitle {
         text-align: center;
         font-size: 21px;
         line-height: 29px;
         margin-bottom: 15px;
     }
-    &__title{
+
+    &__title {
         @extend %title-font;
         font-size: 30px;
         line-height: 41px;
         margin-bottom: 60px;
         text-align: center;
     }
-    &__list{
+
+    &__list {
         margin-right: 80px;
     }
-    &__list-item{
+
+    &__list-item {
         line-height: 25px;
         margin-bottom: 15px;
         padding-left: 37px;
         position: relative;
-        &:last-child{
+
+        &:last-child {
             margin-bottom: 0;
         }
-        &::after{
+
+        &::after {
             content: '';
             position: absolute;
             background-image: url(../images/mailing-icon.svg);
@@ -453,19 +509,23 @@ body.lock{
             transform: translateY(-50%);
         }
     }
-    &__border{
+
+    &__border {
         border: 1px solid #fff;
         padding: 14px 15px;
     }
-    &__form{
+
+    &__form {
         padding: 20px 22px;
         background-color: #fff;
     }
-    &__form-input{
+
+    &__form-input {
         border: 1px solid #D6D6D6;
         padding: 15px 10px;
         margin-right: 15px;
-        &::placeholder{
+
+        &::placeholder {
             font-size: 14px;
             line-height: 17px;
             font-weight: 500;
@@ -474,7 +534,8 @@ body.lock{
             text-transform: uppercase;
         }
     }
-    &__form-btn{
+
+    &__form-btn {
         background: #333333;
         padding: 15px 35px;
         border: 1px solid #fff;
@@ -487,14 +548,16 @@ body.lock{
     }
 }
 
-.footer{
+.footer {
     padding: 80px 0 20px;
-    &__inner{
+
+    &__inner {
         display: flex;
         margin: 0 -15px;
         padding-bottom: 60px;
         position: relative;
-        &::before{
+
+        &::before {
             content: '';
             position: absolute;
             width: calc(100% - 30px);
@@ -506,12 +569,13 @@ body.lock{
             margin: 0 auto;
         }
     }
-    &__item{
+
+    &__item {
         margin: 0 15px;
         width: calc(25% - 30px);
     }
 
-    &__title{
+    &__title {
         text-transform: uppercase;
         font-weight: 500;
         font-size: 18px;
@@ -520,7 +584,8 @@ body.lock{
         padding-bottom: 10px;
         margin-bottom: 30px;
         position: relative;
-        &::before{
+
+        &::before {
             content: '';
             position: absolute;
             height: 1px;
@@ -530,29 +595,36 @@ body.lock{
             width: 100%;
         }
     }
-    &__list-item{
+
+    &__list-item {
         margin-bottom: 15px;
         font-size: 14px;
-        &:last-child{
+
+        &:last-child {
             margin-bottom: 0;
         }
     }
-    &__text{
+
+    &__text {
         font-size: 14px;
         margin-bottom: 22px;
     }
-    &__images{
+
+    &__images {
         display: flex;
     }
-    &__img-visa{
+
+    &__img-visa {
         margin-right: 20px;
     }
-    &__item-phone{
+
+    &__item-phone {
         position: relative;
         margin-bottom: 15px;
         padding-left: 40px;
         font-size: 14px;
-        &::after{
+
+        &::after {
             content: '';
             position: absolute;
             background-image: url(../images/phone-icon.svg);
@@ -562,11 +634,13 @@ body.lock{
             bottom: 0;
         }
     }
-    &__item-email{
+
+    &__item-email {
         font-size: 14px;
         position: relative;
         padding-left: 40px;
-        &::after{
+
+        &::after {
             content: '';
             position: absolute;
             background-image: url(../images/mail-icon.svg);
@@ -576,14 +650,17 @@ body.lock{
             bottom: 0;
         }
     }
-    &__social-list{
+
+    &__social-list {
         display: flex;
         margin: 0 -10px;
     }
-    &__social-item{
+
+    &__social-item {
         margin: 0 10px;
     }
-    &__info{
+
+    &__info {
         padding-top: 20px;
         display: flex;
         justify-content: space-between;
@@ -591,36 +668,42 @@ body.lock{
     }
 }
 
-.breadcrumbs{
- padding: 60px 0;
- &__list{
-     display: flex;
-     justify-content: center;
- }
- &__item{
-    padding-right: 25px;
-    margin-right: 15px;
-    position: relative;
-    &::before{
-        content: '/';
-        position: absolute;
-        bottom: 0;
-        right: 0;
+.breadcrumbs {
+    padding: 60px 0;
+
+    &__list {
+        display: flex;
+        justify-content: center;
     }
- }
-    &__item:last-child::before{
+
+    &__item {
+        padding-right: 25px;
+        margin-right: 15px;
+        position: relative;
+
+        &::before {
+            content: '/';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    &__item:last-child::before {
         display: none;
     }
-    &__link{
+
+    &__link {
         border-bottom: 1px solid #333;
     }
-    &__item--active{
+
+    &__item--active {
         border: none;
     }
 }
 
-.contact{
-    &__title{
+.contact {
+    &__title {
         font-weight: 500;
         font-size: 24px;
         line-height: 28px;
@@ -628,24 +711,28 @@ body.lock{
         margin-bottom: 40px;
         letter-spacing: 2.4px;
     }
-     &__inner{
+
+    &__inner {
         display: flex;
         justify-content: space-between;
         padding-bottom: 45px;
         border-bottom: 1px solid #D6D6D6;
     }
-    &__item-title{
+
+    &__item-title {
         font-weight: 600;
         line-height: 25px;
         font-size: 18px;
         margin-bottom: 25px;
     }
-    &__item-adress{
+
+    &__item-adress {
         margin-bottom: 15px;
         font-size: 14px;
         padding-left: 30px;
         position: relative;
-        &::before{
+
+        &::before {
             content: '';
             position: absolute;
             background-image: url(../images/location.svg);
@@ -655,13 +742,15 @@ body.lock{
             bottom: 0;
         }
     }
-    &__item-phone{
+
+    &__item-phone {
         display: block;
         margin-bottom: 15px;
         font-size: 14px;
         padding-left: 30px;
         position: relative;
-        &::before{
+
+        &::before {
             content: '';
             position: absolute;
             background-image: url(../images/tel.svg);
@@ -671,13 +760,15 @@ body.lock{
             bottom: 0;
         }
     }
-    &__item-email{
+
+    &__item-email {
         margin-bottom: 15px;
         font-size: 14px;
         padding-left: 30px;
         display: block;
         position: relative;
-        &::before{
+
+        &::before {
             content: '';
             position: absolute;
             background-image: url(../images/mail-icon.svg);
@@ -689,37 +780,44 @@ body.lock{
     }
 }
 
-.map{
+.map {
     padding: 60px 0 40px;
-    iframe{
-       text-align: center;
-       height: 750px;
+
+    iframe {
+        text-align: center;
+        height: 750px;
     }
 }
 
-.product{
+.product {
     margin-bottom: 120px;
+
     &__sliders {
         max-width: 540px;
         width: 100%;
         margin-right: 30px;
     }
-    &__inner{
+
+    &__inner {
         display: flex;
     }
+
     &__slider-gallery {
         height: 430px;
         margin-bottom: 30px;
     }
+
     &__slider-thumbs {
         height: 120px;
     }
-    &__slider-big-img{
+
+    &__slider-big-img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    &__slider-litle-img{
+
+    &__slider-litle-img {
         height: 100%;
         width: 100%;
         cursor: pointer;
@@ -727,14 +825,16 @@ body.lock{
     }
 }
 
-.product-description{
+.product-description {
     border: 1px solid #D6D6D6;
     padding: 10px;
-    &__inner{
+
+    &__inner {
         border: 1px solid #D6D6D6;
         padding: 40px 30px;
     }
-    &__title{
+
+    &__title {
         font-size: 24px;
         line-height: 28px;
         font-weight: 500;
@@ -742,13 +842,15 @@ body.lock{
         letter-spacing: 2.4px;
         text-transform: uppercase;
     }
-    &__tags{
+
+    &__tags {
         color: rgba(151, 151, 151, 1);
         font-size: 14px;
         padding-bottom: 30px;
         margin-bottom: 30px;
         position: relative;
-        &::after{
+
+        &::after {
             content: '';
             position: absolute;
             width: 100%;
@@ -760,18 +862,22 @@ body.lock{
             margin: 0 auto;
         }
     }
+
     &__category,
-    &__brend{
+    &__brend {
         margin-right: 15px;
     }
-    &__item{
+
+    &__item {
         margin-right: 25px;
     }
-    &__text{
+
+    &__text {
         margin-bottom: 30px;
         font-size: 14px;
     }
-    &__price{
+
+    &__price {
         font-weight: 600;
         font-size: 24px;
         line-height: 29px;
@@ -779,7 +885,8 @@ body.lock{
         display: inline-block;
         margin-bottom: 30px;
     }
-    &__btn-buy{
+
+    &__btn-buy {
         cursor: pointer;
         padding: 10px 20px;
         text-transform: uppercase;
@@ -788,7 +895,8 @@ body.lock{
         background-color: #333;
         margin-right: 30px;
     }
-    &__btn-basket{
+
+    &__btn-basket {
         cursor: pointer;
         border: 1px solid #333;
         color: $accent;
@@ -798,30 +906,35 @@ body.lock{
     }
 }
 
-.information{
+.information {
     margin-bottom: 120px;
-    &__inner{
+
+    &__inner {
         padding: 0 95px;
         display: flex;
     }
-    &__description{
+
+    &__description {
         margin-right: 100px;
         max-width: 640px;
     }
-    &__title{
+
+    &__title {
         font-weight: 600;
         font-size: 30px;
         line-height: 42px;
         margin-bottom: 30px;
     }
-    &__text{
+
+    &__text {
         font-size: 16px;
         line-height: 24px;
         max-height: 240px;
         overflow: hidden;
         position: relative;
         margin-bottom: -40px;
-        &::after{
+
+        &::after {
             content: '';
             position: absolute;
             left: 0;
@@ -832,13 +945,15 @@ body.lock{
         }
 
     }
-    &__btn{
+
+    &__btn {
         font-weight: 500;
         letter-spacing: 1.8px;
         text-transform: uppercase;
         cursor: pointer;
         position: relative;
-        &::after{
+
+        &::after {
             content: '';
             position: absolute;
             border-bottom: 1px dashed #333;
@@ -847,95 +962,113 @@ body.lock{
             left: 0;
         }
     }
-    &__items{
+
+    &__items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px 60px;
-        
+
     }
-    &__item{
+
+    &__item {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    &__item-img{
+
+    &__item-img {
         margin-top: auto;
         margin-bottom: auto;
     }
-    &__item-text{
+
+    &__item-text {
         font-size: 16px;
         line-height: 24px;
         margin-top: 15px;
     }
-    &__btn--active{
+
+    &__btn--active {
         display: none;
     }
+
     &__text--active {
         max-height: none;
         margin-bottom: 5px;
         overflow: visible;
+
         &::after {
             display: none;
         }
     }
 }
 
-.catalog{
+.catalog {
     padding-bottom: 60px;
     text-align: center;
-    &__pretitle{
+
+    &__pretitle {
         font-size: 21px;
         line-height: 29px;
         margin-bottom: 15px;
     }
-    &__title{
+
+    &__title {
         @extend %title-font;
         font-size: 30px;
         line-height: 41px;
         margin-bottom: 60px;
     }
-    &__items{
+
+    &__items {
         display: flex;
         justify-content: space-between;
         text-align: center;
     }
-    &__item{
+
+    &__item {
         border: 1px solid #f9f9f9;
         padding: 35px;
         transition: all .5s;
-        &:hover{
+
+        &:hover {
             border: 1px solid #D6D6D6;
         }
     }
-    &__item-link{
+
+    &__item-link {
         margin-bottom: 25px;
     }
-    &__item-category{
+
+    &__item-category {
         max-width: 350px;
         font-size: 16px;
         line-height: 24px;
         display: block;
     }
-    &__item-brend{
+
+    &__item-brend {
         display: block;
         font-size: 24px;
         line-height: 34px;
         font-weight: 600;
         margin-bottom: 15px;
     }
-    &__item-price{
+
+    &__item-price {
         color: $another;
         border: 1px solid #333;
         background: #333;
         padding: 10px 20px;
         letter-spacing: 1.8px;
     }
-    &__box{
+
+    &__box {
         padding-bottom: 60px;
         margin-bottom: 60px;
         position: relative;
-        &::after{
+
+        &::after {
             content: '';
             position: absolute;
             height: 1px;
@@ -947,10 +1080,12 @@ body.lock{
             background: #D6D6D6;
         }
     }
-    &__btn{
+
+    &__btn {
         text-align: center;
     }
-    &__btn-link{
+
+    &__btn-link {
         padding: 15px 35px;
         color: $another;
         background-color: #333;
@@ -959,18 +1094,20 @@ body.lock{
     }
 }
 
-.category{
+.category {
     padding: 100px 0 150px;
-    &__items{
+
+    &__items {
         display: flex;
         margin: 0 -15px 60px 0;
     }
-    &__item{
+
+    &__item {
         margin: 0 15px;
         position: relative;
         width: calc(100% / 6 - 30px);
-      
-        &::before{
+
+        &::before {
             content: '';
             position: absolute;
             background-image: url(../images/select-arrow.svg);
@@ -980,7 +1117,8 @@ body.lock{
             top: 7px;
         }
     }
-    &__select{
+
+    &__select {
         width: 100%;
         font-size: 16px;
         line-height: 24px;
@@ -994,9 +1132,6 @@ body.lock{
         position: relative;
         z-index: 4;
         cursor: pointer;
-    }
-    &__select-option{
-    
     }
 }
 
