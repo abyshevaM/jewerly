@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ojjo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header header-main">
+      <div class="container-top">
+        <div class="header__inner">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  Контрагентам
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  Дизайнерам
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  Вакансии
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="logo">
+            <a class="logo__link" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="logo">
+            </a>
+          </div>
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <div class="header__adaptive">
+            <ul class="header__adaptive-menu">
+              <li class="header__adaptive-item">
+                <a class="header__adaptive-link" href="#">
+                  Контрагентам
+                </a>
+              </li>
+              <li class="header__adaptive-item">
+                <a class="header__adaptive-link" href="#">
+                  Дизайнерам
+                </a>
+              </li>
+              <li class="header__adaptive-item">
+                <a class="header__adaptive-link" href="#">
+                  Вакансии
+                </a>
+              </li>
+              <li class="header__adaptive-item">
+                <a class="header__adaptive-link" href="#">
+                  Вход
+                </a>/
+                <a class="header__adaptive-link" href="#">
+                  Регистрация
+                </a>
+              </li>
+            </ul>
+            <div class="header__adaptive-profile">
+              <a class="header__adaptive-user" href="#">
+                <img class="header__adaptive-img" src="images/user-adaptive.svg" alt="images">
+              </a>
+              <a class="header__adaptive-favorite" href="#">
+                <img class="header__adaptive-img" src="images/favorit-adaptive.svg" alt="images">
+              </a>
+            </div>
+            <div class="header__adaptive-social">
+              <ul class="header__adaptive-social-list">
+                <li class="header__adaptive-social-item">
+                  <a class="header__adaptive-social-link" href="#">
+                    <img class="header__adaptive-social-img" src="images/adaptive-youtube.svg" alt="youtube">
+                  </a>
+                </li>
+                <li class="header__adaptive-social-item">
+                  <a class="header__adaptive-social-link" href="#">
+                    <img class="header__adaptive-social-img" src="images/adaptive-vkontakte.svg" alt="vkontakte">
+                  </a>
+                </li>
+                <li class="header__adaptive-social-item">
+                  <a class="header__adaptive-social-link" href="#">
+                    <img class="header__adaptive-ocial-img" src="images/adaptive-facebook.svg" alt="facebook">
+                  </a>
+                </li>
+                <li class="header__adaptive-social-item">
+                  <a class="header__adaptive-social-link" href="#">
+                    <img class="header__adaptive-social-img" src="images/adaptive-telegram.svg" alt="telegram">
+                  </a>
+                </li>
+                <li class="header__adaptive-social-item">
+                  <a class="header__adaptive-social-link" href="#">
+                    <img class="header__adaptive-social-img" src="images/adaptive-ethernet.svg" alt="ethernet">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="profile__list">
+            <li class="profile__list-item">
+              <form class="profile__form" action="/search/">
+                <label class="profile__label">
+                  <img class="profile__form-label-img" src="images/search-icon.svg" alt="search">
+                  <input class="profile__input" type="search" placeholder="Поиск">
+                </label>
+              </form>
+            </li>
+            <li class="profile__list-item">
+              <a class="profile__list-link profile__list-linkentrance" href="#">
+                Вход
+              </a>
+              <a class="profile__list-link" href="#">
+                Регистрация
+              </a>
+            </li>
+            <li class="profile__list-item profile__list-item-icon">
+              <a class="profile__list-link" href="#">
+                <img class="profile__list-user" src="images/user-icon.svg" alt="account">
+              </a>
+              <a class="profile__list-link" href="#">
+                <img class="profile__list-favorite" src="images/favorit-icon.svg" alt="favorite">
+              </a>
+            </li>
+          </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+    <main class="main">
+
+      <section class="category">
+        <div class="container">
+          <div class="category__items">
+            <div class="category__item">
+              <select class="category__select" name="category-select">
+                <option class="category__select-option" value="disabled">Бренд</option>
+                <option class="category__select-option" value="Dolce & Gabanna">Dolce & Gabanna</option>
+                <option class="category__select-optin" value="LOUIS VUITTON">LOUIS VUITTON</option>
+                <option class="category__select-option" value="Dolce & Gabanna">Dolce & Gabanna</option>
+                <option class="category__select-option" value="LOUIS VUITTON">LOUIS VUITTON</option>
+              </select>
+            </div>
+            <div class="category__item">
+              <select class="category__select" name="category-select">
+                <option class="category__select-option" value="disabled">Цена</option>
+                <option class="category__select-option" value="до 100">до 100</option>
+                <option class="category__select-optin" value="100-1000">100-1000</option>
+                <option class="category__select-option" value="1000-10000">1000-10000</option>
+                <option class="category__select-option" value="от 10000">от 10000</option>
+              </select>
+            </div>
+            <div class="category__item">
+              <select class="category__select" name="category-select">
+                <option class="category__select-option" value="disabled">Для кого</option>
+                <option class="category__select-option" value="Мужчины">Мужчины</option>
+                <option class="category__select-optin" value="Женщины">Женщины</option>
+                <option class="category__select-option" value="Подростки">Подростки</option>
+                <option class="category__select-option" value="Дети">Дети</option>
+              </select>
+            </div>
+
+            <div class="category__item">
+              <select class="category__select" name="category-select">
+                <option class="category__select-option" value="disabled">Сезон </option>
+                <option class="category__select-option" value="Зимняя">Зимняя</option>
+                <option class="category__select-optin" value="Осенняя">Осенняя</option>
+                <option class="category__select-option" value="Весенняя">Весенняя</option>
+                <option class="category__select-option" value="Летняя">Летняя</option>
+              </select>
+            </div>
+
+            <div class="category__item">
+              <select class="category__select" name="category-select">
+                <option class="category__select-option" value="disabled">Коллекция</option>
+                <option class="category__select-option" value="Коллекция1">Коллекция1</option>
+                <option class="category__select-optin" value="Коллекция2">Коллекция2</option>
+                <option class="category__select-option" value="Коллекция3">Коллекция3</option>
+                <option class="category__select-option" value="Коллекция4">Коллекция4</option>
+              </select>
+            </div>
+
+            <div class="category__item">
+              <select class="category__select" name="category-select">
+                <option class="category__select-option" value="disabled">Событие</option>
+                <option class="category__select-option" value="Событие1">Событие1</option>
+                <option class="category__select-optin" value="Событие2">Событие2</option>
+                <option class="category__select-option" value="Событие3">Событие3</option>
+                <option class="category__select-option" value="Событие4">Событие4</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="catalog__box">
+            <ul class="catalog__items">
+              <li class="catalog__item">
+                <a class="catalog__item-link" href="#">
+                  <img class="catalog__item-img" src="images/products/1.jpg" alt="images">
+                </a>
+                <a class="catalog__item-category" href="#">
+                  Подвеска
+                </a>
+                <a class="catalog__item-brend" href="#">Dolce & Gabanna</a>
+                <a class="catalog__item-price" href="#">175 000 ₽</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__item-link" href="#">
+                  <img class="catalog__item-img" src="images/products/1.jpg" alt="images">
+                </a>
+                <a class="catalog__item-category" href="#">
+                  Подвеска
+                </a>
+                <a class="catalog__item-brend" href="#">Dolce & Gabanna</a>
+                <a class="catalog__item-price" href="#">175 000 ₽</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__item-link" href="#">
+                  <img class="catalog__item-img" src="images/products/1.jpg" alt="images">
+                </a>
+                <a class="catalog__item-category" href="#">
+                  Подвеска
+                </a>
+                <a class="catalog__item-brend" href="#">Dolce & Gabanna</a>
+                <a class="catalog__item-price" href="#">175 000 ₽</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="catalog__items">
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                <img class="catalog__item-img" src="images/products/1.jpg" alt="images">
+              </a>
+              <a class="catalog__item-category" href="#">
+                Подвеска
+              </a>
+              <a class="catalog__item-brend" href="#">Dolce & Gabanna</a>
+              <a class="catalog__item-price" href="#">175 000 ₽</a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                <img class="catalog__item-img" src="images/products/1.jpg" alt="images">
+              </a>
+              <a class="catalog__item-category" href="#">
+                Подвеска
+              </a>
+              <a class="catalog__item-brend" href="#">Dolce & Gabanna</a>
+              <a class="catalog__item-price" href="#">175 000 ₽</a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__item-link" href="#">
+                <img class="catalog__item-img" src="images/products/1.jpg" alt="images">
+              </a>
+              <a class="catalog__item-category" href="#">
+                Подвеска
+              </a>
+              <a class="catalog__item-brend" href="#">Dolce & Gabanna</a>
+              <a class="catalog__item-price" href="#">175 000 ₽</a>
+            </li>
+          </ul>
+          <div class="catalog__btn">
+            <a class="catalog__btn-link" href="#">
+              покажите еще
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="information">
+        <div class="container">
+          <div class="information__inner">
+            <div class="information__description">
+              <h5 class="information__title">
+                Полное описание товара
+              </h5>
+              <div class="information__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, lorem eu commodo porttitor erat. Amet
+                  mauris
+                  cursus bibendum in egestas. Nulla porttitor amet quam elit, mauris. Tortor egestas dignissim augue
+                  suspendisse
+                  rutrum pretium lobortis dolor. Commodo sagittis at amet faucibus faucibus id. Bibendum placerat
+                  convallis
+                  gravida eu quisque et augue. Sed dignissim amet ut vitae at ornare sed.
+                  Commodo sagittis at amet faucibus faucibus id. Bibendum placerat convallis gravida eu quisque et augue
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, lorem eu commodo porttitor erat. Amet
+                  mauris
+                  cursus bibendum in egestas. Nulla porttitor amet quam elit, mauris. Tortor egestas dignissim augue
+                  suspendisse
+                  rutrum pretium lobortis dolor. Commodo sagittis at amet faucibus faucibus id. Bibendum placerat
+                  convallis
+                  gravida eu quisque et augue. Sed dignissim amet ut vitae at ornare sed.
+                  Commodo sagittis at amet faucibus faucibus id. Bibendum placerat convallis gravida eu quisque et augue
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, lorem eu commodo porttitor erat. Amet
+                  mauris
+                  cursus bibendum in egestas. Nulla porttitor amet quam elit, mauris. Tortor egestas dignissim augue
+                  suspendisse
+                  rutrum pretium lobortis dolor. Commodo sagittis at amet faucibus faucibus id. Bibendum placerat
+                  convallis
+                  gravida eu quisque et augue. Sed dignissim amet ut vitae at ornare sed.
+                  Commodo sagittis at amet faucibus faucibus id. Bibendum placerat convallis gravida eu quisque et augue
+                </p>
+                <p>
+                  Sed
+                  dignissim amet ut vitae at ornare sed.
+                </p>
+              </div>
+
+              <div class="information__btn  ">
+                читать полностью
+              </div>
+            </div>
+            <div class="information__benefits">
+              <ul class="information__items">
+                <li class="information__item">
+                  <img class="information__item-img" src="images/delivery-icon.svg" alt="images">
+                  <p class="information__item-text">
+                    Бесплатная
+                    доставка
+                  </p>
+                </li>
+                <li class="information__item">
+                  <img class="information__item-img" src="images/design-icon.svg" alt="images">
+                  <p class="information__item-text">
+                    Индивидуальный
+                    дизайн
+                  </p>
+                </li>
+
+                <li class="information__item">
+                  <img class="information__item-img" src="images/fitting-icon.svg" alt="images">
+                  <p class="information__item-text">
+                    Бесплатная
+                    примерка
+                  </p>
+                </li>
+                <li class="information__item">
+                  <img class="information__item-img" src="images/approach-icon.svg" alt="images">
+                  <p class="information__item-text">
+                    Личный<br>
+                    подход
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="mailing">
+        <div class="mailing__pretitle">
+          Полезные советы и персональный предложения
+        </div>
+        <h5 class="mailing__title">
+          Эксклюзивная рассылка
+        </h5>
+        <div class="mailing__inner">
+          <ul class="mailing__list">
+            <li class="mailing__list-item">
+              Личный менеджер
+            </li>
+            <li class="mailing__list-item">
+              Доставка и оформление
+            </li>
+            <li class="mailing__list-item">
+              Индивидуальный дизайн
+            </li>
+          </ul>
+          <div class="mailing__border">
+            <form class="mailing__form">
+              <input class="mailing__form-input" type="email" placeholder="Ваш e-mail">
+              <button class="mailing__form-btn">
+                отправить
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__item">
+            <h6 class="footer__title">
+              Полезные ссылки
+            </h6>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Доставка
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Оплата
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Акции
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Политика конфиденциальности
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h6 class="footer__title">
+              оплата
+            </h6>
+            <p class="footer__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
+            </p>
+            <div class="footer__images">
+              <img class="footer__img-visa" src="images/visa.png" alt="visa">
+              <img class="footer__img-card" src="images/mastercard.png" alt="mastercard">
+            </div>
+          </div>
+          <div class="footer__item">
+            <h6 class="footer__title">
+              контакты
+            </h6>
+            <a class="footer__item-phone" href="tel:88122345655">8 (812) 234-56-55</a>
+            <a class="footer__item-phone" href="tel:88122345655">8 (812) 234-56-55</a>
+            <a class="footer__item-email" href="mailto:ojjo@ojjo.ru">ojjo@ojjo.ru</a>
+          </div>
+          <div class="footer__item">
+            <h6 class="footer__title">
+              социальные сети
+            </h6>
+            <p class="footer__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
+            </p>
+            <div class="footer__social">
+              <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <img class="footer__social-img" src="images/youtube.svg" alt="youtube">
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <img class="footer__social-img" src="images/vkontakte.svg" alt="vkontakte">
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <img class="footer__social-img" src="images/facebook.svg" alt="facebook">
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <img class="footer__social-img" src="images/telegram.svg" alt="telegram">
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <img class="footer__social-img" src="images/ethernet.svg" alt="ethernet">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__info">
+          <span class="footer__info-item">
+            (c) 2020 OJJO jewelry
+          </span>
+          <a class="footer__info-item" href="#">Договор публичной офферты</a>
+          <a class="footer__info-item" href="#">Контрагентам</a>
+          <span class="footer__info-item">
+            (c) 2020 OJJO jewelry
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
